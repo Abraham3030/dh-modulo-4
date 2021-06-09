@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.caja-divs{
+    border: solid red 1px;
+    margin: 5px;
+}
+.caja-semantica{
+    border: solid blue 1px;
+    text-align: center;
+}
+img{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

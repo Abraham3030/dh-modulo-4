@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/clase-11/contenido-clase-11.css">
+    <title>Clase 11</title>
+</head>
+<body>
+    <header>
+        <h3>Contenido Clase 11</h3>
+        <h4>Creando la estructura de un sitio web</h4>
+    </header>
+    <main>
+        <div class="caja-divs">
+            <h4>-Elementos de linea y de bloque</h4>
+            <!--Las próximas lineas de texto debe estar cada una contenida dentro de una etiqueta span-->
+            <span>Esto es un texto dentro de un span.</span>
+            <span>Otro texto dentro de un span</span>
+            <span>Ultimo texto dentro de un span.</span>
+
+            <!--Las próximas lineas de texto debe estar cada una contenida dentro de una etiqueta div-->
+            <div> es un texto dentro de un div.</div>
+            <div>Otro texto dentro de un div.</div>
+            <div>Ultimo texto dentro de un div.</div>
+        </div>
+
+        <div class="caja-divs">
+            <h4>-Etiquetas de texto</h4>
+            <h2>Titulo 2</h2>
+            <h3>Titulo 3</h3>
+            <p>Parrafo del texto</p>   
+        </div>
+
+        <div class="caja-divs">
+            <h4>-Ejemplo de Listas</h4>
+            <p>Listas desordenadas</p>
+            <ul>
+                <li>rojo</li>
+                <li>negro</li>
+                <li>azul</li>
+            </ul>
+            <p>Listas ordenadas comenzando por el numero 10</p>
+            <ol start="10">
+                <li>Lord of the ring 1</li>
+                <li>Lord of the ring 2</li>
+                <li>Lord of the ring 3</li>
+            </ol>
+        </div>
+
+        <div class="caja-divs">
+            <h4>-Rutas, hipervínculos e imágenes</h4>
+            <div>
+                <p>Ejemplo de hipervínculo</p>
+                <a href="https://www.digitalhouse.com">Vamos a digitalhouse</a>
+            </div>
+            <div>
+                <p>Ejemplo de ruta absoluta</p>
+                <p>http://bit.do/imagen-blend</p>
+                <img src="http://bit.do/imagen-blend" alt="HTML5"></img>
+            </div>
+            
+            <div>
+                <p>Ejemplo de hipervinculo con ruta parcial</p>
+                <p>/image/clase-10/img-google.png</p>
+                <a href="https://google.com"><img src="/image/clase-10/img-google.png"/></a>
+            </div>
+            
+            <div>
+                <p>Lista desordenada con hipervinculo</p>
+                <ul>
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://www.ole.com.ar">Olé</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="caja-divs">
+            <h4>Introduccion a la Semantica</h4>
+            <p>Elementos de bloque</p>
+            <header class="caja-semantica" >
+                header
+            </header>
+            <nav class="caja-semantica">
+                nav
+            </nav>
+            <section class="caja-semantica">
+                section
+            </section>
+            <article class="caja-semantica">
+                article
+            </article>
+            <footer class="caja-semantica">
+                footer
+            </footer>
+            
+        </div>
+    </main>
+      
+    <footer>
+        <a href="/">Regresar</a>
+    </footer>
+
+</body>
+</html>

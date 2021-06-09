@@ -1,0 +1,24 @@
+{
+  "name": "modulo4dh",
+  "version": "0.0.1",
+  "description": "Contenido del modulo 4 de Digital House Donde se Explica HTML5, CSS3, y el Servidor de Express de Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "Node",
+    "Express"
+  ],
+  "author": "José Abraham Montelongo Campos",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,85 @@
+.navbar__menu2 {    
+    display: none;
+}
+input[type="checkbox"]:checked + .navbar__menu2{
+    display: block;
+}
+
+.navbar__menu3 {    
+    display: none;
+}
+input[type="checkbox"]:checked + .navbar__menu3{
+    display: block;
+}
+
+.navbar__menu4 {    
+    display: none;
+}
+input[type="checkbox"]:checked + .navbar__menu4{
+    display: block;
+}
+/**/
+.caja-divs{
+    border: solid black 1px;
+    margin: 5px;
+}
+/**/
+.primer-selector p{
+    color: red;
+}
+/**/
+.mas-selectores h3{
+    color: blue;
+}
+.mas-selectores .negrita{
+    font-weight: bold;
+}
+.mas-selectores #gigante{
+    font-size: 40px;
+}
+/**/
+
+.atributo-class .destacado {
+    color: gold;
+}
+
+.atributo-class .en-mayuscula {
+    text-transform: uppercase;
+}
+
+.atributo-class #whatsapp {
+    background-color: green;
+    color: white;
+}
+/**/
+.agregando-estilos p {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold; 
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;  
+}
+/**/
+.fondos {
+/* escribí las reglas para el body aquí */
+    background-image: url('https://images3.alphacoders.com/621/621682.jpg');
+    /*background-repeat:no-repeat;*/
+    background-size: cover;
+    height: 79vh;
+}
+
+.fondos h1 {
+/* escribí las reglas para el h1 aquí */
+
+    color: #f4e033;  
+    background-color: rgba(0,0,0,0.8);;
+
+}
+
+.fondos h2 {
+/* escribí las reglas para el h2 aquí */
+    color: white;
+    background-color: orange ; 
+    opacity: 0.4;
+}

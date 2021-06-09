@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a Servidores</title>
+</head>
+<body>
+    <header>
+        <h1>Estructura de un servidor en Express Node</h1>
+        <p> Se muestra el codigo basico para poder levantar un
+            servidor con Node Express.
+        </p>
+    </header>
+   
+    <main>
+        <div class="estructura-directorio">
+            <div>Estructura basica de un directorio para usar express.</div>
+            <img src="/image/estructura-directorio-proyecto-express.png" alt="">
+        </div>
+        <div>
+            <div>index.js para usar express.</div>
+            <img src="/image/ejemplo-indexjs.png" alt="">
+        </div>
+        <div>
+            <div>index.html para usar express.</div>
+            <img src="/image/ejemplo-indexhtml.png" alt="">
+        </div>
+        <div class="codigo">
+            <div><h1>Codigo index.js</h1></div>
+            <br>
+            <div>// Importacion de modulos nativos de Node en una constante</div>
+            <div>const express = require('express');</div> 
+            <div>const path    = require('path');</div>
+            <br>
+            <div>// Asignacion de una variable app al modulo de express</div>
+            <div>const app = express();</div>
+            <div>const PORT = 3000;</div>
+            <br>
+            <div>// Se declara una ruta publica para obtener los recursos estaticos deseados</div>
+            <div>const publicPath = path.join(__dirname, './public');</div>
+            <div>app.use( express.static( publicPath ));</div>
+            <br>
+            <div>// Esta es la vista asiganda que va abrir el servidor por ' / '</div>
+            <div>app.get('/', (req,res) => {</div>
+            <div>res.sendFile('./index.html', {root: 'views'})</div>
+            <div>// Otra forma de abrir la vista seleccionada para levantar el servidor con path.resolve</div>
+            <div>//res.sendFile(path.resolve(__dirname, './views/home.html'));</div>
+            <div>});</div>
+            <br>
+            <div>// Ruta hacia otras vistas</div>
+            <div>app.get('/otra-vista', (req,res) => {</div>
+            <div>res.sendFile('./otra-vista.html', {root: 'views'})</div>
+            <div>})</div>
+            <br>
+            <div>// codigo para levantar el servidor en el puerto 3000</div>
+            <div>app.listen( 3000, () => {</div>
+            <div>console.log('Servidor corriendo en el puerto 3000');</div>
+            <div>});</div>
+            <br>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="/">Regresar</a>
+        </div>
+    </footer>
+</body>
+</html>
